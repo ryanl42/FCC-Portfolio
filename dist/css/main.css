@@ -1,6 +1,14 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #navbar {
   position: fixed;
   top: 0;
+  right: 0;
   background-color: #bce3f5;
   width: 100%;
   z-index: 1;
@@ -11,7 +19,7 @@
   font-size: 20px;
   padding: 10px 20px;
   text-decoration: none;
-  color: #159d3b;
+  color: #1c1f1d;
 }
 
 #welcome-section {
@@ -19,14 +27,13 @@
   height: 100vh;
   background-color: #bce3f5;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 #welcome-section h1 {
   padding-top: 50vh;
-}
-
-#welcome-section p {
-  margin-top: -15px;
+  font-weight: 300;
 }
 
 #projects {
@@ -36,14 +43,15 @@
   grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: rgb(255, 239, 239);
   grid-gap: 30px;
   text-align: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .project-tile {
-  background-color: lightgray;
   justify-self: center;
   align-self: center;
   width: 100%;
@@ -51,9 +59,20 @@
   text-align: center;
 }
 
+.project-tile img {
+  width: 100%;
+}
+
+.project-title {
+}
+
+.repo-link a {
+  text-decoration: none;
+}
+
 #contact {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: #75b5f4;
   text-align: center;
 }
@@ -61,7 +80,7 @@
 .contact-info {
   display: inline-block;
   font-weight: bold;
-  margin: 25vh 50px;
+  margin: 10vh 50px;
   width: 100px;
   height: 100px;
   line-height: 600%;
@@ -80,6 +99,7 @@
 
 footer {
   width: 100%;
-  height: 25vh;
-  background-color: darkgray;
+  height: 2vh;
+  background-color: rgb(255, 237, 237);
+  text-align: center;
 }
